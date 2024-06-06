@@ -32,7 +32,26 @@
          -Merge columns: 
          CONCAT(P.FirstName,'  ',P.LastName) as full_name
          -Age calculation:
-…                            END as age_categor
+
+         DATEDIFF(YEAR,ED.BirthDate,GETDATE()) as age
+         -Determine the age group:
+
+         CASE 
+              WHEN DATEDIFF(YEAR,ED.BirthDate,GETDATE()) BETWEEN 30 AND 40 THEN '30 to 40'
+
+                   WHEN DATEDIFF(YEAR,ED.BirthDate,GETDATE()) BETWEEN 41 AND 50 THEN '41 to 50'
+
+                   	 WHEN DATEDIFF(YEAR,ED.BirthDate,GETDATE()) BETWEEN 51 AND 60 THEN '51 to 60'
+                          ELSE 'Above 60'
+
+                          END as age_categor
+
+
+
+
+
+
+
  - Step 5 : Create a view for the query
      
      ![لقطة شاشة 2024-06-06 120028](https://github.com/HASSN1421/Data-Analysis-With-SQL-and-Visualization-With-PowerBI/assets/162873878/cac3c79b-2eb0-4c58-9815-717e8845eb4a)
