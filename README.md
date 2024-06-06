@@ -7,7 +7,22 @@
 
 
 ## Problem Statement
-…   
+ The Human Resources Department wants a report from you according to the following requirements  
+- Total employees by department and section
+- Know the details of employees’ ages by gender 
+- Average sick leave by gender and age group 
+- Details of employees by Shift by  gender and age
+- A table containing employee details
+- The age division is (30-40, 40-50, and 50-60)
+ ### Steps followed
+- Step 1 : Understanding and analyzing requirements
+ - Step 2 : Review the data and identify the tables and columns I need in the report
+   ![لقطة شاشة 2024-06-06 112054](https://github.com/HASSN1421/Data-Analysis-With-SQL-and-Visualization-With-PowerBI/assets/162873878/71002e5c-fbdf-4582-876e-837a26f22398)
+
+
+
+
+   
  - Step 3 : Understand relationships and write a query to collect data
   - Step 4 : Add the operations I need in the query to build the report 
        
